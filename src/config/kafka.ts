@@ -19,7 +19,7 @@ if(!path.resolve(__dirname, "ca.pem")){
 
 const kafka = new Kafka({
   clientId: "websocket-group",
-  brokers: ["kafka-3b93307f-isorax-f3da.f.aivencloud.com:12182"], // Replace with actual Aiven Kafka broker URL
+  brokers: ["from ur env "], // Replace with actual Aiven Kafka broker URL
   ssl: {
     ca: [fs.readFileSync(path.resolve(__dirname, "ca.pem"), "utf8")],
   },
